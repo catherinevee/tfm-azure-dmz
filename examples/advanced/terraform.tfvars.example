@@ -1,0 +1,18 @@
+# Example terraform.tfvars file for the Advanced Azure DMZ Example
+# Copy this file to terraform.tfvars and update the values according to your environment
+
+# DDoS Protection Plan ID (optional)
+# ddos_protection_plan_id = "/subscriptions/your-subscription-id/resourceGroups/rg-ddos/providers/Microsoft.Network/ddosProtectionPlans/ddos-plan"
+
+# SSH Public Key for NVA instances
+# Generate your SSH key pair: ssh-keygen -t rsa -b 4096
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC..."
+
+# Storage Account ID for Network Watcher flow logs (optional)
+# storage_account_id = "/subscriptions/your-subscription-id/resourceGroups/rg-storage/providers/Microsoft.Storage/storageAccounts/staccount"
+
+# Log Analytics Workspace ID for traffic analytics (optional)
+# log_analytics_workspace_id = "your-workspace-id"
+
+# Log Analytics Workspace Resource ID for traffic analytics (optional)
+# log_analytics_workspace_resource_id = "/subscriptions/your-subscription-id/resourceGroups/rg-monitoring/providers/Microsoft.OperationalInsights/workspaces/your-workspace" 
